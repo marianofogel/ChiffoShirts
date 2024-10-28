@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0; /* Eliminar márgenes */
+}
+
+/* Fondo */
+.first-section-body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #01a007, #024d01); /* Degradado celeste a amarillo */
+    color: #000000; /* Texto negro */
+    text-align: center;
+    padding: 20px;
+    width: 100vw;
+    margin-top: 0px; /* Compensa la altura de la navbar para centrar el contenido */
+}
+
+/* Header y Navbar */
+.header-chiffo-shirts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-chiffo-shirts .navbar {
+    width: 100vw;
+    background-color: #ecede8 !important; /* Color de fondo de la navbar */
+    border-bottom: 3px solid #00e1ff; /* Línea de acento en azul */
+}
+
+/* Imagen del logo */
+.imagen-logo-empresa {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Links de la navbar */
+.links-chiffo-navbar .nav-link {
+    color: #000000;
+    font-weight: bold;
+    margin: 0 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.links-chiffo-navbar .nav-link:hover {
+    background-color: #38878ed8;
+    color: #000000;
+}
+
+.links-chiffo-navbar .nav-link[aria-current="page"] {
+    background-color: #73b7bdd8;
+    color: #000000;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links-chiffo-navbar .nav-link {
+        margin: 5px 0;
+    }
+}
