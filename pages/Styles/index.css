@@ -95,6 +95,7 @@ body {
     margin-bottom: 20px; 
     overflow: hidden; 
     animation: fadeIn 1s ease-in-out; 
+   
 }
 
 .marcador-container::before {
@@ -202,14 +203,17 @@ body {
 .contenedor-mas-chiffo{
     position: absolute;
     bottom: 5%;
-    
-    
 }
 
 .mas-chiffo-shirts{
     background-color: rgb(86, 86, 253);
     padding: 10px;
     border-radius: 1rem;
+}
+
+/* Espaciado para el contenido debajo de la navbar */
+.main-content {
+    padding-top: 80px; /* Ajusta este valor a la altura de tu navbar */
 }
 
 /* --- Responsivo --- */
@@ -254,5 +258,14 @@ body {
 
     .links-chiffo-navbar .navlink-chiffo {
         margin: 0 10px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-chiffo {
+        padding: 10px 20px;
+    }
+    .main-content {
+        padding-top: 60px; /* Ajusta este valor al tamaño de la navbar en modo responsive */
     }
 }

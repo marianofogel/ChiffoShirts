@@ -12,28 +12,37 @@
 
 <body>
     <header class="header-chiffo-shirts">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-chiffo">
-            <img class="imagen-logo-empresa" src="../img/logo-de-la-empresa.jpg" alt="logo-de-la-empresa" />
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav ms-auto links-chiffo-navbar">
-                    <li class="nav-item">
-                        <a class="nav-link navlink-chiffo" aria-current="page" href="/pages/index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-chiffo" href="/pages/nacional.html">NACIONAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-chiffo" href="/pages/internacional.html">INTERNACIONAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-chiffo" href="/pages/resenas.html" aria-disabled="true">RESEÑAS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link navlink-chiffo" href="/pages/contacto.html" aria-disabled="true">CONTACTO</a>
-                    </li>
-                </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-chiffo sticky-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img class="imagen-logo-empresa" src="../img/logo-de-la-empresa.jpg" alt="logo-de-la-empresa" />
+                </a>
+                <!-- Botón de colapso para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto links-chiffo-navbar">
+                        <li class="nav-item">
+                            <a class="nav-link navlink-chiffo"  href="/pages">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink-chiffo" aria-current="page" href="/pages/nacional.html">NACIONAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink-chiffo" href="/pages/internacional.html">INTERNACIONAL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink-chiffo" href="/pages/resenas.html" aria-disabled="true">RESEÑAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navlink-chiffo" href="/pages/contacto.html" aria-disabled="true">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
         </nav>
     </header>
 
