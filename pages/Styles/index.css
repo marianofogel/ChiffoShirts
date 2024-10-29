@@ -95,7 +95,6 @@ body {
     margin-bottom: 20px; 
     overflow: hidden; 
     animation: fadeIn 1s ease-in-out; 
-   
 }
 
 .marcador-container::before {
