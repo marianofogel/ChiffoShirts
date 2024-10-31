@@ -3,13 +3,15 @@
 
 @font-face {
     font-family: 'LCD Solid';
-    src: url('../Fonts/LcdSolid-VPzB.ttf') format('truetype');
+    src: url('../pages/Fonts/LcdSolid-VPzB.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 /* --- Estilos Generales --- */
 body {
+    background: url('../../img/grass-931796_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -27,8 +29,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('../../img/grass-931796_1280.jpg') no-repeat center center fixed;
-    background-size: cover;
+    
     color: #000000;
     text-align: center; 
     padding: 20px; 

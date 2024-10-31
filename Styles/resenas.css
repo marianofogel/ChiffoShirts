@@ -1,5 +1,20 @@
-.vitrina-chiffo-shirts {
+.first-section-body {
+    padding-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.container-vitrina-chiffo {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
     
+    padding-bottom: 40px;
+}
+
+.vitrina-chiffo-shirts {
     border: 2px solid #ccc; /* Borde de la vitrina */
     padding: 20px; /* Espacio dentro de la vitrina */
     background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
@@ -8,6 +23,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas */
     gap: 20px; /* Espacio entre las tarjetas */
+    
+}
+
+.titulo-reseñas-chiffo{
+    color: white;
+    font-family: 'LCD Solid', sans-serif;
+    padding: 1rem;
+    margin: 3rem;
+    background-color: black;
+    border-radius: .5rem;
+    letter-spacing: 3px; 
 }
 
 
@@ -37,8 +63,9 @@
     border-radius: 5px; /* Esquinas redondeadas para la imagen */
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1270px) {
     .vitrina-chiffo-shirts {
+        padding-top: 15%;
         border: 2px solid #ccc; /* Borde de la vitrina */
         padding: 20px; /* Espacio dentro de la vitrina */
         background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
@@ -48,4 +75,30 @@
         grid-template-columns: repeat(2, 1fr); /* Crea 3 columnas */
         gap: 20px; /* Espacio entre las tarjetas */
     }
+}
+
+@media (max-width: 840px) {
+    .vitrina-chiffo-shirts {
+        padding-top: 15%;
+        border: 2px solid #ccc; /* Borde de la vitrina */
+        padding: 20px; /* Espacio dentro de la vitrina */
+        background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+        border-radius: 10px; /* Esquinas redondeadas */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Crea 3 columnas */
+        gap: 20px; /* Espacio entre las tarjetas */
+    }
+
+    .titulo-reseñas-chiffo{
+        color: white;
+        font-family: 'LCD Solid', sans-serif;
+        padding: 1rem;
+        margin-top: 6rem;
+        background-color: black;
+        border-radius: .5rem;
+        letter-spacing: 3px; 
+    }
+
+
 }
