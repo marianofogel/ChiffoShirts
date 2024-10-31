@@ -4,8 +4,6 @@
 @font-face {
     font-family: 'LCD Solid';
     src: url('../pages/Fonts/LcdSolid-VPzB.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
 
 /* --- Estilos Generales --- */
@@ -13,259 +11,244 @@ body {
     background: url('../../img/grass-931796_1280.jpg') no-repeat center center fixed;
     background-size: cover;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f2f2f2;
-    margin: 0; 
-}
-
-/* --- Sección Principal --- */
-.first-section-body {
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    
-    color: #000000;
-    text-align: center; 
-    padding: 20px; 
-    width: 100vw; 
-    position: relative; 
+    min-height: 100vh;
 }
 
 /* --- Navbar --- */
 .header-chiffo-shirts {
-    position: fixed; 
-    top: 0; 
-    width: 100%; 
-    z-index: 1000; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ecede8;
+    border-bottom: 3px solid #00e1ff;
 }
 
-.header-chiffo-shirts .navbar-chiffo {
-    width: 100%; 
-    background-color: #ecede8 !important; 
-    border-bottom: 3px solid #00e1ff; 
-    display: flex; 
+.navbar-chiffo {
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    padding: 10px 0; 
+    align-items: center;
+    padding: 10px;
 }
 
 .imagen-logo-empresa {
-    width: 100px; 
-    height: auto; 
-    margin-bottom: 10px; 
-}
-
-.links-chiffo-navbar {
-    display: flex; 
-    justify-content: center; 
-    flex-wrap: wrap; 
+    width: 80px;
+    height: auto;
 }
 
 .links-chiffo-navbar .navlink-chiffo {
-    color: #000000; 
-    font-weight: bold; 
-    margin: 0 15px; 
-    border-radius: 5px; 
-    transition: all 0.3s ease-in-out; 
+    color: #000000;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
 }
 
-.links-chiffo-navbar .navlink-chiffo:hover {
-    background-color: #38878ed8; 
-    color: #000000; 
-}
-
+.links-chiffo-navbar .navlink-chiffo:hover,
 .links-chiffo-navbar .navlink-chiffo[aria-current="page"] {
-    background-color: #73b7bdd8; 
-    color: #000000; 
+    background-color: #38878ed8;
 }
 
 /* --- Marcador --- */
+.contenedor-inicio-chiffo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .marcador-chiffo-shirts {
-    position: relative; 
-    background-color: #ecede8; 
-    padding: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
-    text-align: center; 
-    margin-bottom: 20px; 
-    overflow: hidden; 
-    animation: fadeIn 1s ease-in-out; 
+    background-color: #ecede8;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 150px 10px 20px;
+    max-width: 95%;
+    
 }
 
 .marcador-container::before {
     content: '';
-    position: absolute; 
-    top: -5px; 
-    left: -5px; 
-    right: -5px; 
-    bottom: -5px; 
-    border: 2px solid rgba(0, 0, 255, 0.8); 
-    border-radius: 12px; 
-    box-shadow: 0 0 20px rgba(0, 0, 255, 1); 
-    animation: flicker 1s infinite; 
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid rgba(0, 0, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 255, 1);
+    animation: flicker 1s infinite;
 }
 
 /* --- Títulos --- */
 .titulo-chiffo {
-    font-family: 'LCD Solid', sans-serif; 
-    font-size: 5rem; 
-    background-color: #000; 
-    color: #00ff00; 
-    padding: 15px 30px; 
-    border-radius: 8px; 
-    display: inline-block; 
-    text-align: center; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); 
-    letter-spacing: 2px; 
-    color: #00aaff; 
-    text-shadow: 0 0 10px rgba(0, 170, 255, 0.7), 0 0 20px rgba(0, 170, 255, 0.5); 
+    font-family: 'LCD Solid', sans-serif;
+    font-size: 3rem;
+    background-color: #000;
+    color: #00aaff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 10px rgba(0, 170, 255, 0.7), 0 0 20px rgba(0, 170, 255, 0.5);
 }
 
 /* --- Reloj --- */
 .reloj-container-chiffo {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    margin-top: 20px; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
 }
 
 .time-box-chiffo {
-    font-family: 'LCD Solid', sans-serif; 
-    font-size: 4rem; 
-    color: #ffffff; 
-    width: 100px; 
-    text-align: center; 
-    border: 4px solid #ffffff; 
-    border-radius: 10px; 
-    background-color: #000000; 
-    margin: 0 10px; 
+    font-family: 'LCD Solid', sans-serif;
+    font-size: 4rem;
+    color: #ffffff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #000000;
 }
 
 .separador {
-    font-size: 5rem; 
-    color: #000000; 
-    padding: 0 15px; 
+    font-size: 4rem;
+    color: #000000;
+    padding: 0 5px;
 }
 
 /* --- Descripción --- */
 .descripcion-chiffo {
-    font-family: 'LCD Solid', sans-serif; 
-    font-size: 1.3rem; 
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 15px 30px; 
-    border-radius: 8px; 
-    text-align: center; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); 
-    letter-spacing: 2px; 
-    margin-top: 10px; 
-    text-shadow: 0 0 10px rgb(0, 170, 255); 
+    font-family: 'LCD Solid', sans-serif;
+    font-size: 1.1rem;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 10px rgb(0, 170, 255);
+    margin-top: 15px;
 }
 
-/* --- Imágenes Circulares --- */
+/* --- Imágenes en Caja con Sombra --- */
 .ligas-chiffo-container {
-    display: flex; 
-    flex-wrap: wrap; 
-    background-color: #02020373; 
-    gap: 30px; 
-    justify-content: center; 
-    padding: 15px; 
-    align-items: center; 
-    margin-top: 30px; 
-    box-shadow: 0px 0px 8px 15px rgba(106, 244, 233, 0.5); 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.552);
+    box-shadow: 0px 0px 70px rgb(255, 255, 255);
+    border-radius: 10px;
+    
 }
 
 .ligas-chiffo-imagenes {
-    width: 150px; 
-    height: 150px; 
-    overflow: hidden; 
-    transition: transform 0.3s ease; 
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .ligas-chiffo-imagenes img {
-    width: 100%; 
-    height: 100%; 
-    object-fit: contain; 
-    display: block; 
-    box-shadow: 0 0 10px rgba(0, 170, 255, 0.5); 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .ligas-chiffo-imagenes:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    /* Animación al hacer hover */
 }
 
-.contenedor-mas-chiffo{
-    position: absolute;
-    bottom: 5%;
+.contenedor-mas-chiffo {
+    margin-top: 20px;
 }
 
-.mas-chiffo-shirts{
-    background-color: rgb(86, 86, 253);
+.mas-chiffo-shirts {
+    background-color: rgb(119, 119, 253);
+    text-align: center;
     padding: 10px;
     border-radius: 1rem;
 }
 
-/* Espaciado para el contenido debajo de la navbar */
-.main-content {
-    padding-top: 80px; /* Ajusta este valor a la altura de tu navbar */
-}
-
-/* --- Responsivo --- */
-@media (max-width: 600px) {
-    .titulo-chiffo {
-        font-size: 4rem; 
-        padding: 10px; 
-    }
-
-    .time-box {
-        font-size: 4rem; 
-        width: 70px; 
-    }
+.footer-contenedor-chiffo {
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: #000;
+    width: 100%;
+    justify-content: center;
     
-    .separator {
-        font-size: 4rem; 
-    }
-
-    .descripcion-chiffo {
-        font-size: 1rem; 
-        padding: 10px; 
-    }
-
-    .circulo-chiffo-imagenes {
-        width: 100px; 
-        height: 100px; 
-    }
-
-    .circulo-chiffo-container {
-        gap: 10px; 
-    }
 }
 
-@media (max-width: 992px) {
-    .header-chiffo-shirts .navbar-chiffo {
-        padding: 5px 0; 
-    }
-
-    .imagen-logo-empresa {
-        width: 80px; 
-    }
-
-    .links-chiffo-navbar .navlink-chiffo {
-        margin: 0 10px; 
-    }
+.footer-contenedor-chiffo ul {
+    padding: 0;
+    width: 100%;
 }
 
+.footer-contenedor-chiffo ul li {
+    margin-bottom: 5px;
+}
+
+
+
+/* --- Ajustes responsivos --- */
 @media (max-width: 768px) {
-    .navbar-chiffo {
-        padding: 10px 20px;
+    .titulo-chiffo {
+        font-size: 2.5rem;
+        padding: 8px 15px;
     }
-    .main-content {
-        padding-top: 60px; /* Ajusta este valor al tamaño de la navbar en modo responsive */
+
+    .time-box-chiffo {
+        font-size: 3rem;
+        width: 80px;
+    }
+
+    .separador {
+        font-size: 4rem;
+    }
+
+    .ligas-chiffo-imagenes {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-chiffo {
+        font-size: 2rem;
+        padding: 5px 10px;
+    }
+
+    .time-box-chiffo {
+        font-size: 2rem;
+        width: 60px;
+        height: 60px;
+    }
+
+    .separador {
+        font-size: 3rem;
+    }
+
+    .ligas-chiffo-container {
+        gap: 10px;
+    }
+
+    .ligas-chiffo-imagenes {
+        width: 80px;
+        height: 80px;
     }
 }
