@@ -216,48 +216,22 @@ body {
     padding-top: 80px; /* Ajusta este valor a la altura de tu navbar */
 }
 
-/* --- Responsivo --- */
-@media (max-width: 600px) {
-    .titulo-chiffo {
-        font-size: 4rem; 
-        padding: 10px; 
-    }
-
-    .time-box {
-        font-size: 4rem; 
-        width: 70px; 
-    }
-    
-    .separator {
-        font-size: 4rem; 
-    }
-
-    .descripcion-chiffo {
-        font-size: 1rem; 
-        padding: 10px; 
-    }
-
-    .circulo-chiffo-imagenes {
-        width: 100px; 
-        height: 100px; 
-    }
-
-    .circulo-chiffo-container {
-        gap: 10px; 
+/* --- General ajustes responsivos --- */
+@media (max-width: 1300px) {
+    .contenedor-inicio-chiffo {
+        padding-top: 100px;
     }
 }
 
 @media (max-width: 992px) {
     .header-chiffo-shirts .navbar-chiffo {
-        padding: 5px 0; 
+        padding: 5px 0;
     }
-
     .imagen-logo-empresa {
-        width: 80px; 
+        width: 80px;
     }
-
     .links-chiffo-navbar .navlink-chiffo {
-        margin: 0 10px; 
+        margin: 0 10px;
     }
 }
 
@@ -265,7 +239,30 @@ body {
     .navbar-chiffo {
         padding: 10px 20px;
     }
-    .main-content {
-        padding-top: 60px; /* Ajusta este valor al tamaño de la navbar en modo responsive */
+    .main-content, .contenedor-inicio-chiffo {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-chiffo, .time-box, .separator {
+        font-size: 4rem;
+    }
+    .descripcion-chiffo {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .circulo-chiffo-imagenes {
+        width: 100px;
+        height: 100px;
+    }
+    .circulo-chiffo-container {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 578px) {
+    .contenedor-inicio-chiffo {
+        padding-top: 400px;
     }
 }
