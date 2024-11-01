@@ -21,6 +21,8 @@
     padding: 10px;
     margin-top: 5px;
     border-radius: 5px;
+    border: 1px solid #ccc; /* Bordes ligeros */
+    font-size: 1rem;
 }
 
 .boton-contacto-chiffo {
@@ -33,4 +35,55 @@
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
+}
+
+.first-section-body {
+    margin-top: 50px; /* Ajusta el espacio entre el formulario y la navbar */
+    padding-bottom: 50px; /* Espacio entre el formulario y el footer */
+}
+
+.titulo-formulario {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contenedor-formulario-chiffo{
+    padding-top: 80px;
+}
+
+/* --- Estilos responsive --- */
+@media (max-width: 768px) {
+    .titulo-formulario {
+        font-size: 1.5rem;
+    }
+
+    .contacto-chiffo-shirts {
+        padding: 15px;
+    }
+
+    .boton-contacto-chiffo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .titulo-formulario {
+        font-size: 1.3rem;
+    }
+
+    .inputs-chiffo-shirts,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    .boton-contacto-chiffo {
+        font-size: 0.9rem;
+    }
+
+    .contacto-chiffo-shirts {
+        padding: 15px;
+        width: 100%; /* Ajuste de ancho para móviles */
+    }
 }
