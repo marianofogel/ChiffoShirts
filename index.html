@@ -80,7 +80,8 @@
         <!-- Botón hacia más contenido -->
         <div class="contenedor-mas-chiffo d-flex justify-content-center pt-5">
             <h3 class="mas-chiffo-shirts">
-                <i class="fa-duotone fa-solid fa-arrow-down"></i> ACÁ MÁS <i class="fa-duotone fa-solid fa-arrow-down"></i>
+                <i class="fa-duotone fa-solid fa-arrow-down"></i> ACÁ MÁS <i
+                    class="fa-duotone fa-solid fa-arrow-down"></i>
             </h3>
         </div>
     </section>
@@ -141,40 +142,55 @@
         </div>
     </section>
 
-    <section class="first-section-body">
+    <section class="first-section-body ">
         <!-- Título del formulario -->
-        <div class="d-flex flex-column contenedor-formulario-chiffo p-0">
-            <h2 class="titulo-formulario">Dejanos tu mensaje:</h2>
-            <form id="contacto-formulario-chiffo"
-                action="https://formspree.io/f/xldegyrr?redirect=http://127.0.0.1:5500/pages/index.html" method="POST">
-                <div class="contacto-chiffo-shirts">
-                    <label class="etiquetas-formulario-chiffo">
-                        Nombre:
-                        <input class="inputs-chiffo-shirts" type="text" name="nombre" placeholder="Mariano, Facundo...">
-                    </label>
-                    <label class="etiquetas-formulario-chiffo">
-                        Equipo:
-                        <input class="inputs-chiffo-shirts" type="text" name="equipo"
-                            placeholder="Boca, Real Madrid...">
-                    </label>
-                    <label class="etiquetas-formulario-chiffo">
-                        Mail:
-                        <input class="inputs-chiffo-shirts" type="email" name="email" placeholder="@gmail, @outlook">
-                    </label>
-                    <label class="etiquetas-formulario-chiffo">
-                        Celular:
-                        <input class="inputs-chiffo-shirts" type="number" name="numero" placeholder="+54 1234567890">
-                    </label>
-                    <label class="etiquetas-formulario-chiffo">
-                        Mas Info:
-                        <textarea name="message"
-                            placeholder="Quisiera saber sobre la remera de ... de talle ... y si hacen envios a ..."></textarea>
-                    </label>
+        <div class="d-flex gap-5 align-items-center m-5 contenedor-general-contacto">
+            <div class="d-flex flex-column contenedor-formulario-chiffo p-0">
+                <h2 class="titulo-formulario">Dejanos tu mensaje:</h2>
+                <form id="contacto-formulario-chiffo"
+                    action="https://formspree.io/f/xldegyrr?redirect=http://127.0.0.1:5500/pages/index.html"
+                    method="POST">
+                    <div class="contacto-chiffo-shirts">
+                        <label class="etiquetas-formulario-chiffo">
+                            Nombre:
+                            <input class="inputs-chiffo-shirts" type="text" name="nombre"
+                                placeholder="Mariano, Facundo...">
+                        </label>
+                        <label class="etiquetas-formulario-chiffo">
+                            Equipo:
+                            <input class="inputs-chiffo-shirts" type="text" name="equipo"
+                                placeholder="Boca, Real Madrid...">
+                        </label>
+                        <label class="etiquetas-formulario-chiffo">
+                            Mail:
+                            <input class="inputs-chiffo-shirts" type="email" name="email"
+                                placeholder="@gmail, @outlook">
+                        </label>
+                        <label class="etiquetas-formulario-chiffo">
+                            Celular:
+                            <input class="inputs-chiffo-shirts" type="number" name="numero"
+                                placeholder="+54 1234567890">
+                        </label>
+                        <label class="etiquetas-formulario-chiffo">
+                            Mas Info:
+                            <textarea name="message"
+                                placeholder="Quisiera saber sobre la remera de ... de talle ... y si hacen envios a ..."></textarea>
+                        </label>
 
-                    <button class="boton-contacto-chiffo" type="submit">Enviar</button>
-                </div>
-            </form>
-            <audio id="festejo" src="/sounds/gritodegol.mp3" preload="auto"></audio>
+                        <button class="boton-contacto-chiffo" type="submit">Enviar</button>
+                    </div>
+                </form>
+                <audio id="festejo" src="/sounds/gritodegol.mp3" preload="auto"></audio>
+            </div>
+
+            <div class="mapa-chiffo-shirts d-flex flex-column">
+                <h2 class="titulo-formulario">Encontranos en: </h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.755976352046!2d-58.36733122350215!3d-34.63560645918425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20Jos%C3%A9%20Armando!5e0!3m2!1ses-419!2sar!4v1730558936783!5m2!1ses-419!2sar"
+                    width="600" height="485" style="border-radius: 5px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="pt-2 pb-3">
+                </iframe>
+            </div>
         </div>
 
     </section>
