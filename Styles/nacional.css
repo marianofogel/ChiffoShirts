@@ -1,0 +1,89 @@
+/* Contenedor principal para las tarjetas */
+.contenedor-nacional-chiffo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10%; /* Espacio superior e inferior */
+    gap: 20px;
+}
+
+/* Contenedor individual de cada tarjeta */
+.contenedor-remeras-nacional {
+    flex: 1 1 280px; /* Ocupa mínimo 280px de ancho y se expande */
+    max-width: 280px; /* Ancho máximo de la tarjeta */
+    display: flex;
+    justify-content: center;
+}
+
+/* Imagen de cada camiseta */
+.imagenes-remeras-nacional {
+    border: 3px solid rgb(87, 218, 254);
+    box-shadow: 0px 0px 10px white;
+    height: 300px;
+    width: 100%; /* Ocupa el 100% del contenedor */
+    object-fit: cover; /* Ajusta la imagen para que encaje */
+    border-radius: 8px;
+}
+
+/* Tarjeta */
+.card-remera-nacional {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid rgb(111, 111, 111);
+    box-shadow: 0px 0px 10px grey;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Título del producto */
+.nombre-nacional-chiffo {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+/* Precio */
+.precio-nacional-chiffo {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Información de cuotas */
+.cuotas-nacional-chiffo {
+    background-color: rgb(79, 228, 79);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Etiqueta de promoción */
+.promocion-river {
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    top: 20px;
+    left: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .contenedor-nacional-chiffo {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 45%;
+    }
+    .contenedor-remeras-nacional {
+        max-width: 90%;
+    }
+}
