@@ -73,6 +73,11 @@
     .boton-contacto-chiffo {
         font-size: 1rem;
     }
+
+    .mapa-chiffo-shirts iframe{
+        width: 400px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -92,5 +97,10 @@
     .contacto-chiffo-shirts {
         padding: 15px;
         width: 100%; /* Ajuste de ancho para móviles */
+    }
+
+    .mapa-chiffo-shirts iframe{
+        width: 300px;
+        height: 250px;
     }
 }

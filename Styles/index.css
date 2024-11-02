@@ -216,6 +216,15 @@ body {
 
 
 /* --- Ajustes responsivos --- */
+@media (max-width: 1100px) {
+    .contenedor-general-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+
 @media (max-width: 768px) {
     .titulo-chiffo {
         font-size: 2.5rem;
