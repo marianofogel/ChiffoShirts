@@ -33,6 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    background-color: #ecede8 !important;;
 }
 
 .imagen-logo-empresa {
