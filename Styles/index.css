@@ -214,13 +214,35 @@ body {
     margin-bottom: 5px;
 }
 
+.contendor-video-chiffo{
+    text-align: center;
+    padding-top: 5rem;
+    width: 95%;
+}
 
+.titulo-analisis{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px white;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'LCD Solid', sans-serif;
+    letter-spacing: 5px;
+    background-color: black;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 12px rgb(167, 249, 248);
+    padding: 2px;
+}
 
 /* --- Ajustes responsivos --- */
 @media (max-width: 1100px) {
     .contenedor-general-contacto{
         display: flex;
         flex-direction: column;
+    }
+
+    .video-chiffo-analisis{
+        width: 700px;
     }
     
 }
@@ -244,6 +266,10 @@ body {
     .ligas-chiffo-imagenes {
         width: 100px;
         height: 100px;
+    }
+
+    .video-chiffo-analisis{
+        width: 500px;
     }
 }
 
@@ -270,5 +296,9 @@ body {
     .ligas-chiffo-imagenes {
         width: 80px;
         height: 80px;
+    }
+
+    .video-chiffo-analisis{
+        width: 400px;
     }
 }
