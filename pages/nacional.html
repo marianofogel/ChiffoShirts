@@ -25,8 +25,7 @@
                 </a>
 
                 <!-- Botón de colapso para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -50,6 +49,44 @@
                             <a class="nav-link navlink-chiffo" href="/pages/contacto.html"
                                 aria-disabled="true">CONTACTO</a>
                         </li>
+                        <!-- Carrito -->
+                        <li class="nav-item">
+                            <div class="container-icon">
+                                <div class="container-cart-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="icon-cart">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                                    </svg>
+                                    <div class="count-products">
+                                        <span id="contador-productos">0</span>
+                                    </div>
+                                </div>
+
+                                <div class="container-cart-products hidden-cart">
+                                    <div class="row-product hidden">
+                                        <div class="cart-product">
+                                            <div class="info-cart-product">
+                                                <span class="cantidad-producto-carrito"></span>
+                                                <p class="titulo-producto-carrito"></p>
+                                                <span class="precio-producto-carrito"></span>
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="icon-close">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6 18L18 6M6 6l12 12" />
+                                            </svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart-total hidden">
+                                        <h3>Total:</h3>
+                                        <span class="total-pagar">$200</span>
+                                    </div>
+                                    <p class="cart-empty">El carrito está vacío</p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -58,80 +95,101 @@
 
     <!-- Sección principal -->
     <section class="first-section-body">
+
         <h1 class="titulo-nacional-chiffo">FÚTBOL ARGENTINO</h1>
+        
         <div class="contenedor-nacional-chiffo">
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/bocajuniros.webp" alt="Boca Juniors Titular" width="280"
                         class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> Boca Juniors 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$100.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$100000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $33.333</p>
-                </div>
+                    <button class="btn-agregar-carrito" data-nombre="Boca Juniors 24/25" data-precio="100000">
+                        Agregar al carrito
+                    </button>
+                </article>
             </div>
 
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/indeprivadavia.jpg" alt="indeprivadavia Titular" width="280"
                         class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> Ind. Rivadavia 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$50.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$50000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $16.666</p>
-                </div>
+                    <button class="btn-agregar-carrito" data-nombre="Ind. Rivadavia 24/25" data-precio="50000">
+                        Agregar al carrito
+                    </button>
+                </article>
             </div>
 
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/lanus.jpeg" alt="Lanus Titular" width="280" class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> Lanus 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$80.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$80000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $26.666</p>
-                </div>
+                    <button class="btn-agregar-carrito" data-nombre="Lanus 24/25 " data-precio="80000">
+                        Agregar al carrito
+                    </button>
+                </article>
             </div>
 
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/sanlorenzo.jpg" alt="San Lorenzo Titular" width="280"
                         class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> San Lorenzo 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$95.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$95000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $31.666</p>
-                </div>
+                    <button class="btn-agregar-carrito" data-nombre="San Lorenzo 24/25" data-precio="95000">
+                        Agregar al carrito
+                    </button>
+                </article>
             </div>
 
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/review-camiseta-titular-puma-de-independiente-2022-2023-1.jpg"
                         alt="Independiente Titular" width="280" class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> Independiente 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$99.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$99000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $33.000</p>
-                </div>
+                    <button class="btn-agregar-carrito" data-nombre="Independiente 24/25 " data-precio="99000">
+                        Agregar al carrito
+                    </button>
+                </article>
             </div>
 
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/review-camiseta-titular-kappa-de-racing-club-2021-1.jpg" alt="Racing Titular"
                         width="280" class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> Racing 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$85.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$85000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $28.333</p>
-                </div>
+                    <button class="btn-agregar-carrito" data-nombre="Racing 24/25" data-precio="85000">
+                        Agregar al carrito
+                    </button>
+                </article>
             </div>
 
             <div class="contenedor-remeras-nacional">
-                <div class="card-remera-nacional">
+                <article class="card-remera-nacional">
                     <img src="/img/riverplate.jpg" alt="River Plate Titular" width="280"
                         class="imagenes-remeras-nacional">
                     <h4 class="nombre-nacional-chiffo"> River Plate 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$40.000</span></p>
+                    <p class="precio-nacional-chiffo"><span>$40000</span></p>
                     <p class="cuotas-nacional-chiffo">3 sin interes de $13.333</p>
+                    <button class="btn-agregar-carrito" data-nombre="River Plate 24/25" data-precio="40000">
+                        Agregar al carrito
+                    </button>
                     <p class="promocion-river">Promoción</p>
-                </div>
+                </article>
             </div>
-
         </div>
-
     </section>
 
     <!-- Footer -->
@@ -190,7 +248,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../scripts/Reloj.js"></script>
+    <script src="/scripts/ScriptsNaciona.js"></script>
 </body>
 
 </html>
