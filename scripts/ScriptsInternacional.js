@@ -1,117 +1,111 @@
 const camisetas = [
     {
-        nombre: "Boca Juniors 24/25",
+        nombre: "Real Madrid 24/25",
+        precio: "$120000",
+        cuotas: "3 sin interes de $40.000",
+        imagen: "/img/internacional/real-madrid.jpg",
+        promocion: false
+    },
+    {
+        nombre: "FC Barcelona 24/25",
+        precio: "$110000",
+        cuotas: "3 sin interes de $36.666",
+        imagen: "/img/internacional/barcelona.jpg",
+        promocion: true
+    },
+    {
+        nombre: "Manchester United 24/25",
+        precio: "$105000",
+        cuotas: "3 sin interes de $35.000",
+        imagen: "/img/internacional/manchesterunited.jpg",
+        promocion: false
+    },
+    {
+        nombre: "Liverpool 24/25",
+        precio: "$95000",
+        cuotas: "3 sin interes de $31.666",
+        imagen: "/img/internacional/liverpool.jpg",
+        promocion: false
+    },
+    {
+        nombre: "Bayern Munich 24/25",
+        precio: "$115000",
+        cuotas: "3 sin interes de $38.333",
+        imagen: "/img/internacional/bayernmunich.jpg",
+        promocion: false
+    },
+    {
+        nombre: "Paris Saint-Germain 24/25",
+        precio: "$120000",
+        cuotas: "3 sin interes de $40.000",
+        imagen: "/img/internacional/psg.jpg",
+        promocion: false
+    },
+    {
+        nombre: "Juventus 24/25",
         precio: "$100000",
         cuotas: "3 sin interes de $33.333",
-        imagen: "/img/bocajuniros.webp",
+        imagen: "/img/internacional/juventus.jpg",
         promocion: false
     },
     {
-        nombre: "River Plate 24/25",
-        precio: "$40000",
-        cuotas: "3 sin interes de $13.333",
-        imagen: "/img/riverplate.jpg",
-        promocion: true
-    }, 
-    {
-        nombre: "Independiente 24/25",
-        precio: "$99000",
-        cuotas: "3 sin interes de $33.000",
-        imagen: "/img/review-camiseta-titular-puma-de-independiente-2022-2023-1.jpg",
+        nombre: "Chelsea 24/25",
+        precio: "$110000",
+        cuotas: "3 sin interes de $36.666",
+        imagen: "/img/internacional/chelsea.jpg",
         promocion: false
     },
     {
-        nombre: "Racing 24/25",
-        precio: "$85000",
-        cuotas: "3 sin interes de $28.333",
-        imagen: "/img/review-camiseta-titular-kappa-de-racing-club-2021-1.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Velez 24/25",
+        nombre: "Arsenal 24/25",
         precio: "$95000",
         cuotas: "3 sin interes de $31.666",
-        imagen: "/img/velez-camiseta.jpg",
+        imagen: "/img/internacional/arsenallondres.jpg",
         promocion: false
     },
     {
-        nombre: "Ind. Rivadavia 24/25",
-        precio: "$50000",
-        cuotas: "3 sin interes de $16.666",
-        imagen: "/img/indeprivadavia.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Lanus 24/25",
-        precio: "$80000",
-        cuotas: "3 sin interes de $26.666",
-        imagen: "/img/lanus.jpeg",
-        promocion: false
-    },
-    {
-        nombre: "San Lorenzo 24/25",
-        precio: "$95000",
-        cuotas: "3 sin interes de $31.666",
-        imagen: "/img/sanlorenzo.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Huracán 24/25",
-        precio: "$75000",
-        cuotas: "3 sin interes de $25.000",
-        imagen: "/img/huracan.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Arsenal Sarandí 24/25",
-        precio: "$40000",
-        cuotas: "3 sin interes de $13.333",
-        imagen: "/img/arsenal.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Talleres de Córdoba 24/25",
+        nombre: "AC Milan 24/25",
         precio: "$90000",
         cuotas: "3 sin interes de $30.000",
-        imagen: "/img/talleres.jpg",
+        imagen: "/img/internacional/acmilan.jpg",
         promocion: false
     },
     {
-        nombre: "Banfield 24/25",
-        precio: "$65000",
-        cuotas: "3 sin interes de $21.666",
-        imagen: "/img/banfield.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Newell's Old Boys 24/25",
-        precio: "$80000",
-        cuotas: "3 sin interes de $26.666",
-        imagen: "/img/newells.jpg",
-        promocion: false
-    },
-    {
-        nombre: "Rosario Central 24/25",
+        nombre: "Inter Milan 24/25",
         precio: "$85000",
         cuotas: "3 sin interes de $28.333",
-        imagen: "/img/rosariocentral.jpg",
+        imagen: "/img/internacional/intermilan.jpg",
         promocion: false
     },
     {
-        nombre: "Godoy Cruz 24/25",
-        precio: "$55000",
-        cuotas: "3 sin interes de $18.333",
-        imagen: "/img/godoycruz.jpeg",
+        nombre: "Tottenham Hotspur 24/25",
+        precio: "$100000",
+        cuotas: "3 sin interes de $33.333",
+        imagen: "/img/internacional/tottenham.jpg",
         promocion: false
     },
     {
-        nombre: "Atlético Tucumán 24/25",
-        precio: "$60000",
-        cuotas: "3 sin interes de $20.000",
-        imagen: "/img/atleticotucuman.jpg",
+        nombre: "Atletico Madrid 24/25",
+        precio: "$95000",
+        cuotas: "3 sin interes de $31.666",
+        imagen: "/img/internacional/atleticomadrid.jpg",
+        promocion: false
+    },
+    {
+        nombre: "Borussia Dortmund 24/25",
+        precio: "$85000",
+        cuotas: "3 sin interes de $28.333",
+        imagen: "/img/internacional/borussiadortmund.jpg",
+        promocion: false
+    },
+    {
+        nombre: "Lazio 24/25",
+        precio: "$75000",
+        cuotas: "3 sin interes de $25.000",
+        imagen: "/img/internacional/lazio.jpg",
         promocion: false
     }
 ];
+
 
 const contenedorCamisetasNacional = document.querySelector('.contenedor-nacional-chiffo');
 const btnCart = document.querySelector('.container-cart-icon');

@@ -25,7 +25,8 @@
                 </a>
 
                 <!-- Botón de colapso para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -58,8 +59,10 @@
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                                     </svg>
-                                    <div class="count-products">
-                                        <span id="contador-productos">0</span>
+                                    <div class="contenedor-cantidad">
+                                        <div class="count-products">
+                                            <span id="contador-productos">0</span>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -97,158 +100,38 @@
     <section class="first-section-body">
 
         <h1 class="titulo-nacional-chiffo">FÚTBOL ARGENTINO</h1>
-        
+
         <div class="contenedor-nacional-chiffo">
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/bocajuniros.webp" alt="Boca Juniors Titular" width="280"
-                        class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> Boca Juniors 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$100000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $33.333</p>
-                    <button class="btn-agregar-carrito" data-nombre="Boca Juniors 24/25" data-precio="100000">
-                        Agregar al carrito
-                    </button>
-                </article>
-            </div>
-
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/indeprivadavia.jpg" alt="indeprivadavia Titular" width="280"
-                        class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> Ind. Rivadavia 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$50000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $16.666</p>
-                    <button class="btn-agregar-carrito" data-nombre="Ind. Rivadavia 24/25" data-precio="50000">
-                        Agregar al carrito
-                    </button>
-                </article>
-            </div>
-
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/lanus.jpeg" alt="Lanus Titular" width="280" class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> Lanus 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$80000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $26.666</p>
-                    <button class="btn-agregar-carrito" data-nombre="Lanus 24/25 " data-precio="80000">
-                        Agregar al carrito
-                    </button>
-                </article>
-            </div>
-
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/sanlorenzo.jpg" alt="San Lorenzo Titular" width="280"
-                        class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> San Lorenzo 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$95000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $31.666</p>
-                    <button class="btn-agregar-carrito" data-nombre="San Lorenzo 24/25" data-precio="95000">
-                        Agregar al carrito
-                    </button>
-                </article>
-            </div>
-
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/review-camiseta-titular-puma-de-independiente-2022-2023-1.jpg"
-                        alt="Independiente Titular" width="280" class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> Independiente 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$99000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $33.000</p>
-                    <button class="btn-agregar-carrito" data-nombre="Independiente 24/25 " data-precio="99000">
-                        Agregar al carrito
-                    </button>
-                </article>
-            </div>
-
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/review-camiseta-titular-kappa-de-racing-club-2021-1.jpg" alt="Racing Titular"
-                        width="280" class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> Racing 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$85000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $28.333</p>
-                    <button class="btn-agregar-carrito" data-nombre="Racing 24/25" data-precio="85000">
-                        Agregar al carrito
-                    </button>
-                </article>
-            </div>
-
-            <div class="contenedor-remeras-nacional">
-                <article class="card-remera-nacional">
-                    <img src="/img/riverplate.jpg" alt="River Plate Titular" width="280"
-                        class="imagenes-remeras-nacional">
-                    <h4 class="nombre-nacional-chiffo"> River Plate 24/25 </h4>
-                    <p class="precio-nacional-chiffo"><span>$40000</span></p>
-                    <p class="cuotas-nacional-chiffo">3 sin interes de $13.333</p>
-                    <button class="btn-agregar-carrito" data-nombre="River Plate 24/25" data-precio="40000">
-                        Agregar al carrito
-                    </button>
-                    <p class="promocion-river">Promoción</p>
-                </article>
-            </div>
         </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer-contenedor-chiffo py-5">
-        <div class="container">
-            <div class="row">
-                <!-- Columna del Logo -->
-                <div class="col-md-4 d-flex flex-column align-items-center  text-center text-md-start mb-4 mb-md-0">
-                    <a class="navbar-brand" href="/index.html">
-                        <img class="imagen-logo-empresa mb-3" src="../img/logo-de-la-empresa.jpg"
-                            alt="logo de la empresa" />
-                    </a>
-                    <p>De Hurlingham al mundo</p>
-                </div>
-
-                <!-- Columna de Redes Sociales -->
-                <div class="col-md-4 text-center mb-4 mb-md-0">
-                    <h5>Síguenos</h5>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a href="#" class="me-3">
-                            <i class="fab fa-facebook fa-2x"></i>
-                        </a>
-                        <a href="#" class="me-3">
-                            <i class="fab fa-x fa-2x"></i>
-                        </a>
-                        <a href="#" class="me-3">
-                            <i class="fab fa-instagram fa-2x"></i>
-                        </a>
+        <!-- Columna de Campeones del Balón de Oro -->
+        <div class="col-md-4 d-flex flex-column align-items-center text-center mb-4 mb-md-0">
+            <h5>Campeones del Balón de Oro</h5>
+            <ul class="list-unstyled mt-3">
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        <li><strong>2024</strong>: Rodri</li>
+                        <li><strong>2023</strong>: Lionel Messi</li>
+                        <li><strong>2022</strong>: Karim Benzema</li>
+                        <li><strong>2021</strong>: Lionel Messi</li>
+                    </div>
+                    <div class="col text-center">
+                        <li><strong>2019</strong>: Lionel Messi</li>
+                        <li><strong>2018</strong>: Luka Modric</li>
+                        <li><strong>2017</strong>: Cristiano Ronaldo</li>
+                        <li><strong>2016</strong>: Cristiano Ronaldo</li>
                     </div>
                 </div>
-
-                <!-- Columna de Campeones del Balón de Oro -->
-                <div class="col-md-4 d-flex flex-column align-items-center text-center mb-4 mb-md-0">
-                    <h5>Campeones del Balón de Oro</h5>
-                    <ul class="list-unstyled mt-3">
-                        <div class="row justify-content-center">
-                            <div class="col text-center">
-                                <li><strong>2024</strong>: Rodri</li>
-                                <li><strong>2023</strong>: Lionel Messi</li>
-                                <li><strong>2022</strong>: Karim Benzema</li>
-                                <li><strong>2021</strong>: Lionel Messi</li>
-                            </div>
-                            <div class="col text-center">
-                                <li><strong>2019</strong>: Lionel Messi</li>
-                                <li><strong>2018</strong>: Luka Modric</li>
-                                <li><strong>2017</strong>: Cristiano Ronaldo</li>
-                                <li><strong>2016</strong>: Cristiano Ronaldo</li>
-                            </div>
-                        </div>
-                    </ul>
-                </div>
-
-            </div>
+            </ul>
         </div>
-    </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/scripts/ScriptsNaciona.js"></script>
+        </div>
+        </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/scripts/ScriptsNaciona.js"></script>
 </body>
 
 </html>
