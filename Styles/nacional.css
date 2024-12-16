@@ -153,7 +153,6 @@
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
-    
 }
 
 .cart-product{
@@ -245,4 +244,12 @@
         position: absolute;
         right: 46%;
     }
+
+    .container-cart-products{
+        position: absolute;
+        top: 96%;
+        right: 33%;
+    }
+
+    
 }
