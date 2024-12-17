@@ -236,6 +236,10 @@
         max-width: 90%;
     }
 
+    .container-cart-products{
+        left: 20%;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -252,4 +256,12 @@
     }
 
     
+}
+
+@media (max-width: 350px) {
+
+    .container-cart-products{
+        left: 5%;
+    }
+
 }
